@@ -2,16 +2,14 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\BankAccount;
 use Illuminate\Database\Seeder;
 
 class BankAccountSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
+        // YÊU CẦU: Tạo tự động 50 tài khoản người dùng
         BankAccount::factory()->count(50)->create();
     }
 }
